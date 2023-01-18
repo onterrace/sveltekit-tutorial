@@ -1,0 +1,13 @@
+
+server:
+  servlet:
+    register-default-servlet: true
+# pring.web.resources.static-locations'    
+# Location을 변경할 경우 기본 경로(classpath:/static/, classpath:/public/ 등)는 모두 동작하지 않는다
+spring:
+  web:
+    resources:
+      static-locations: 
+        - classpath:/sveltekit/
+        - classpath:/static/
+#       static-locations: classpath:/static/
